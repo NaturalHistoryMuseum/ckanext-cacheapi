@@ -35,6 +35,3 @@ def cache_clear(context, data_dict):
 
     # Clear the cache
     log.info('Clearing cache %s', cache_id)
-
-
-
