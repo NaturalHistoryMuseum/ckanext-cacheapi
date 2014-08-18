@@ -1,0 +1,3 @@
+
+class CacheUrlException(Exception):
+    pass

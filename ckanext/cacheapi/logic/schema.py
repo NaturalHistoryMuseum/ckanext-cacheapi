@@ -8,7 +8,7 @@ not_missing = get_validator('not_missing')
 def cache_clear_schema():
 
     schema = {
-        'cache_id': [not_missing, unicode],
+        'cache': [not_missing, unicode],
     }
 
     return schema

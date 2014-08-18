@@ -7,7 +7,7 @@ class CacheCommand(CkanCommand):
     Create / Add / Delete type from the dataset type vocabulary
 
     Commands:
-        paster cache clear cache_id -c <config>
+        paster cache clear proxy_cache_path -c <config>
         paster cache clear cache_id -c /etc/ckan/default/development.ini
 
     Where:
@@ -45,7 +45,7 @@ class CacheCommand(CkanCommand):
     def clear(self):
 
         try:
-            data = {'cache_id': self.args[1]}
+            data = {'cache': self.args[1]}
         except IndexError:
             print 'ERROR: cache ID not specified'
             print self.usage
